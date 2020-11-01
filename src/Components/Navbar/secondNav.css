@@ -1,0 +1,32 @@
+.cat__btn{
+    font-weight: bold;
+    outline-style: none !important;
+    border: none;
+}
+.dropdown-menu{
+    margin-top: 120px !important;
+    width: 100%;
+    
+}
+.subMenu{
+    font-size: 15px;
+}
+
+.dropdown-item:hover{
+    color: rgb(98, 165, 219) !important;
+    background: transparent !important;
+}
+.allCats{
+    color: #002f34 !important;
+    font-weight: bolder  !important;
+    text-transform: uppercase !important;
+}
+.active > a{
+    color: #002f34 !important;
+}
+.active > a:hover{
+    color: rgb(142, 196, 241) !important;
+}
+.dropdown-menu{
+    margin-top: -4px !important ;
+}

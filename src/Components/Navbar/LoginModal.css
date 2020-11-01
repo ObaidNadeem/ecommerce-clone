@@ -1,0 +1,134 @@
+button:focus,
+button:hover{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.modal-dialog.modal-lg.modal-dialog-centered{
+  max-width: 400px;
+  max-height: 580px;
+
+}
+
+.model-header{
+  height: 100px !important;
+}
+
+.modal-body{
+  width: 100% !important;
+  height: 400px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modal-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-footer p{
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-footer p:last-child{
+  font-size: 0.7rem;
+  color: rgba(0,47,52,.64);
+}
+
+.modal-item-img{
+  width: 100px;
+  height: 100px;
+}
+
+.modal-item-img img{
+  height: 100%;
+  width: 100%;
+}
+
+.modal-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-item p{
+  box-sizing: border-box;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.model-content{
+  background-color: #ebeeef;
+}
+
+.carousel-indicators{
+  margin: -10px auto;
+/* background: #a8a8a836; */
+  height: 4vh;
+}
+
+.carousel-indicators li{
+  background-color: #90f2ed;
+  width: 7.5px !important;
+  height: 7.5px !important;
+  border-radius: 50% !important;
+}
+
+.social-auth-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+}
+
+.social-auth-buttons button{
+  background: white;
+  border: 2px solid #002f34;
+  border-radius: 3px;
+  padding: 7px;
+  width: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #002f34;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.social-auth-buttons button:hover{
+  border: 3px solid #002f34;
+}
+
+.social-auth-buttons button svg{
+  margin-right: 5px;
+  color: #002f34;
+  opacity: 0.85;
+}
+
+.btn-primary{
+  background: none !important;
+/* color: #002f34; */
+border: none !important;
+text-decoration: underline;
+/* border-bottom: 2px solid !important; */
+}
+
+.login-button {
+    color: black !important;
+}

@@ -1,0 +1,109 @@
+.footerMain h3 {
+    font-size: 14px;
+    /* line-height: 20px; */
+    color: #002f34;
+    text-transform: uppercase;
+    font-weight: 700;
+    flex-basis: 20%;
+    display: block;
+}
+
+.footerMain p {
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: rgba(0,47,52,64);
+    /* display: flex */
+    margin-bottom:0.1rem;
+    color: rgba(0,47,52,.64);
+
+}
+
+.footerMain svg {
+    fill: rgba(0,47,52,.64);
+    cursor: pointer;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    padding-right:8px;
+}
+
+.footerMain p:hover {
+    color: #002f34;
+}
+
+.footerMain {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 2rem; */
+    line-height: 20px;
+    background-color: #ebeeef;
+    padding: 2rem;
+
+} 
+
+.footerMain .links {
+    width: 10rem;
+    display: flex;
+    align-items: flex-end;
+    height: 60%;
+    cursor: pointer;
+}
+
+.countries ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    color: white;
+    /* width: 35%; */
+    width: 100%;
+
+    /* justify-content: space-between; */
+}
+
+.countries ul li:nth-child(2) ,
+.countries ul li:nth-child(4) ,
+.countries ul li:nth-child(6) {
+    cursor: pointer;
+}
+
+.countries {
+    font-size: 12px;
+    /* line-height: 18px; */
+    /* background-color: #002f34; */
+    /* padding:16px 0; */
+    /* justify-content: space-between; */
+    /* width: 70%; */
+    margin-top: 0.7rem;
+
+}
+
+.countries ul li {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+    /* width: 100%; */
+    margin-left: 0.5rem;
+}
+
+.main {
+    line-height:14px;
+    background-color: #002f34;
+    padding:16px 16px;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main .copyright {
+    display: flex;
+    justify-content: end;
+    /* width: 100%; */
+    margin-top: 0.7rem;
+}

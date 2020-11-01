@@ -1,0 +1,92 @@
+.olxAppCard {
+    display: flex;
+    /* flex-wrap:wrap ; */
+    width: 100% ;
+    background-color: rgba(0,47,52,.03);
+    justify-content: center;
+}
+
+.text {
+    color: #002f34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding-left: 10rem; */
+    margin:0px ;
+    width: 35%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.text h2 {
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 70%;
+}
+
+.links {
+    display: flex;
+    width: 15rem;
+}
+
+.links img:nth-child(2) {
+    margin-left: 10px;
+}
+
+.getAppPara{
+    font-size: 14px;
+    line-height: 14px;
+    /* margin-bottom: 0px; */
+    margin: 60px 0px 12px;
+    color: #002f34;    
+    font-weight: 700;
+}
+
+.line {
+    width: 2px;
+    margin: 0;
+    background-color: rgba(0,47,52,.2);
+    border:0 solid rgba(0,47,52,.2);
+    height: 136px;
+    display: flex;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* margin-right: 100px; */
+    position: absolute;
+    right: 420px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+
+
+.back-to-top span {
+    background-color: white ;
+    font-size: 20px !important;
+    color: #002f34;
+    position: fixed;
+    top: 5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    filter: drop-shadow( 0px 4px 6px rgba(0,0,0, 0.5));
+    fill-opacity: 2%;
+    /* position: absolute; */
+    /* z-index: 9999; */
+    width: 10 rem;
+
+    /* width: 20rem; */
+}
+
+.back-to-top {
+    width: 100%;
+    
+}

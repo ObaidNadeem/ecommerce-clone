@@ -1,0 +1,97 @@
+.carouseL{
+  /* background-color: black; */
+  margin-top: 100px;
+}
+
+.carouselContainer{
+  /* margin-top: 150px; */
+  margin-bottom: 20px;
+  background-color: #ebeeef;
+  border-radius: 5px !important;
+  padding: 10px;
+  
+}
+.carousel__header > h6{
+  color: #002f34;
+  font-size: 28px !important;
+  font-weight: 18px;
+  letter-spacing: -1.5px;
+  font-family: 'Roboto', sans-serif;
+}
+.card > .hey{
+  width: 170px;
+  padding: 20px;
+  height: 200px;
+  margin-left: 40px;
+  align-items: center;
+}
+.card-title{
+  font-size: 1.3rem;
+  color: #002f34;
+  font-weight: 700;
+}
+.card-text{
+  color: rgb(116, 113, 113);
+  font-size: 1rem;
+}
+.card-img-top{
+  margin-left: 60px;
+  height: 150px;
+  margin-top: px;
+}
+/* .card-text > span{
+  font-size: 50px !important;
+} */
+.heartIcon{
+  float: right !important;
+  margin-left: 44px !important;
+}
+.img{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.card{
+  width: 100% !important;
+}
+
+/* .w-75 {
+  width: 90% !important;
+} */
+
+.next,.prev{
+  color: black !important;
+  background-color: transparent !important;
+  /* box-shadow: 0 2px 8px 0 rgba(0,0,0,.15); */
+  /* box-shadow: 0 10 0 20 #ccc; */
+  font-size: 2rem !important;
+  border-radius: 50% !important;
+  border: none !important;
+
+}
+.carousel__header{
+  display: flex;
+  justify-content: space-between;
+}
+.carousel__header > a{
+  font-size: 14px;
+  color: #002f34;
+  font-weight: 700;
+  /* border-bottom:2px solid #002f34 ; */
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+
+}
+.carousel__header > a:hover{
+  border-bottom: none;
+}
+.mainContainer__carousel{
+  width: 1250px !important;
+  padding: 30px;
+  height: 450px !important;
+  margin: 1.5% auto;
+}
+
+.ind-card div{
+  max-height: 300px;
+}

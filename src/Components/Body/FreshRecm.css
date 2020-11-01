@@ -1,0 +1,31 @@
+.recm-indv-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5.5rem;
+}   
+
+.fresh-rec-card{
+    min-width: 30% !important;
+    margin-bottom: 3rem;
+    /* max-height: 300px; */
+    max-width: 400px !important;
+}
+
+#recmTag {
+    font-size: 1rem;
+    background-color: orange;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fresh::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    /* top: 25%; */
+    bottom: 0px;
+    height: 30%;
+    border-left: 5px solid orange;
+}
+

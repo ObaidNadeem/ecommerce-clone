@@ -1,0 +1,269 @@
+.olxLogo svg{
+    width: 50px !important;
+    display: inline-block;
+    /* padding-top: .3125rem; */
+    /* padding-bottom: .3125rem; */
+    /* margin-right: 1rem; */
+    /* font-size: 1.25rem; */
+    line-height: inherit;
+    white-space: nowrap;
+    fill: #002f34;
+}
+
+.olxLogo svg:hover {
+    cursor: pointer;
+}
+
+.sellButton:hover {
+    cursor: pointer;
+}
+
+.sellButton{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: white; */
+    /* border: 3px solid black; */
+    width: 110px;
+    /* height: 40px; */
+    /* float: right; */
+    /* font-size: 15px; */
+    /* text-align: center; */
+    /* font-weight: bold; */
+    /* float: right; */
+    /* border: 5px solid transparent; */
+    /* border-radius: 50px;; */
+    /* border-image: linear-gradient(45deg, yellow, lightblue ,blue); */
+    /* border-ima */
+    /* border-image-slice: 2; */
+    /* background-origin: border-box; */
+    /* background-clip: content-box, border-box; */
+    margin-left: 20px;
+    margin-right: 20px;
+    filter: drop-shadow(0px 2px 4px #666666);
+
+}
+
+#loginBtn {
+    margin-left: 20px;
+    font-weight: bold;
+    border-bottom:2px solid #002f34;
+    padding: 0;
+}
+
+#loginBtn:hover {
+    cursor: pointer;
+    border-bottom: none;
+}
+  
+#navbar_chat {
+    /* fill: white !important; */
+    margin-left: 10px;
+    font-weight: 200;
+    width: 50px !important;
+}
+
+.olxLogo img::after {
+    box-sizing: border-box;
+}
+
+.olxLogo img::before {
+    box-sizing: border-box;
+}
+
+.mr-sm-2 {
+    width: 500px !important;
+}
+
+.searchBarIcon svg {
+    fill: white !important;
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+Form {
+    background-color: #002f34;
+    padding: 2px;
+    /* padding-right: 20px; */
+    /* border-radius: 5px; */ 
+    /* min-width: 48px; */
+    /* height: 48px; */
+    /* display: flex; */
+    cursor: pointer;
+    border-radius: 4px 4px 4px 4px;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 100%; */
+    width: 80%;
+    margin-left: 20px;
+
+}
+
+#searchbar_input {
+    height: 48px !important;
+    min-width: 48px !important;
+    width: 92.5% !important;
+    /* margin-left: 50px; */
+    /* border-radius: ; */
+     
+}
+     
+.mr-auto {
+    justify-content: center;
+    width: 100%;
+} 
+
+#parentDiv {
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+#country_input {
+    display: flex;
+    align-items: center;
+    height: 48px !important;
+    background: #fff;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border: 2px solid #002f34;
+    border-radius: 50%;
+    margin-right: 20px !important;
+}
+
+
+.MuiInputBase-root{
+    display: flex;
+    align-items: center;
+    height: 48px !important;
+    background: #fff;
+    padding: 0 8px;
+    box-sizing: border-box;
+    /* border: 2px solid #002f34; */
+    border-radius: 50px;
+    margin-right: 20px; 
+}
+
+.headerImage {
+    background-image: url("https://statics.olx.com.pk/external/base/img/hero_bg_pk.jpg");
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: top ;
+    border: none;
+    outline: none;
+
+}
+
+.secondHeader {
+    background-image: url("https://tpc.googlesyndication.com/simgad/12756253881537486263");
+    /* background-image: url(./images/oppo-ad.png); */
+    margin-top: 3rem;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    /* width: 100%; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* right: 0; */
+    z-index: 1;
+    /* top: 300px; */
+    /* transform: translate(-50%, 100px); */
+}
+
+/* Second nav  */
+
+.bottom-nav{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: space-around; */
+  border-bottom: 1px solid lightgray;
+  margin-left: 2.5rem;
+  font-size: 1.2rem;
+
+}
+
+#dropdown-basic{
+  background: none;
+  color: black;
+  border: none;
+  font-size: 0.75rem;
+}
+
+#dropdown-basic:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.dropdown, .dropleft, .dropright, .dropup{
+  /* width: 60%; */
+  /* width: 100%; */
+  /* position: fixed; */
+  /* width: 1080px; */
+  position: unset !important;
+}
+
+.dropdown-menu{
+  display: flex !important;
+  justify-content: space-around !important;
+  flex-wrap: wrap !important;
+  /* align-items: center !important; */
+  width: 100%;
+}
+
+.dropdown-menu .dropdown-item-cont{
+  width: 30%;
+}
+
+.dropdown-menu .dropdown-item-cont ul{
+  list-style-type: none;
+}
+
+.dropdown-menu .dropdown-item-cont ul li{
+  font-size: 0.75rem;
+  margin-right: 1%;
+}
+
+.dropdown-item{
+  font-size: 0.8rem;
+  font-weight: bold !important;
+}
+
+.popular-categories{
+  width: 50%;
+  position: absolute;
+    margin-top: 0.35%;
+}
+
+.popular-categories ul{
+  display: flex;
+justify-content: space-around;
+align-items: center;
+list-style-type: none;
+/* width: 100%; */
+font-size: 0.8em;
+}
+
+
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  /* width: 50%; */
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
