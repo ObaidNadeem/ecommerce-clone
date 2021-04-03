@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import {FreshRecommendCard} from './CommonCard';
 import { blue } from '@material-ui/core/colors';
 import FeaturedColData from './FeaturedColData';
 import { FreshRecmCard , StartSellingCard } from './FreshRecmCard';
@@ -8,12 +7,7 @@ import './card.css'
 
 class FreshRecommendation extends Component {
   
-    // load_more = () => {
-    //     this.setState ({
-          
-    //       })
-    //       console.log(this.state.value)
-    // } 
+ 
   
     render(){
         return(
@@ -23,12 +17,8 @@ class FreshRecommendation extends Component {
 
                     {
                         FeaturedColData.map((value,index)=>{
-                            // if (index==3){
-                            //     return <StartSellingCard />
-                            // }
-                            // else{
+                            
                             return <div className="col fresh-rec-card"> <FreshRecmCard className="fresh" key={index} imgsrc = {value.img} price={value.price} title = {value.title} /> </div>
-                            // }
                         })
 
                     }
@@ -38,7 +28,6 @@ class FreshRecommendation extends Component {
 
                </div>
                 
-                    {/* <button onClick={this.load_more} type="submit">Load More</button> */}
             </div>
         )
     }

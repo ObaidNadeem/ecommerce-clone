@@ -1,10 +1,8 @@
 .carouseL{
-  /* background-color: black; */
   margin-top: 100px;
 }
 
 .carouselContainer{
-  /* margin-top: 150px; */
   margin-bottom: 20px;
   background-color: #ebeeef;
   border-radius: 5px !important;
@@ -39,9 +37,7 @@
   height: 150px;
   margin-top: px;
 }
-/* .card-text > span{
-  font-size: 50px !important;
-} */
+
 .heartIcon{
   float: right !important;
   margin-left: 44px !important;
@@ -54,15 +50,11 @@
   width: 100% !important;
 }
 
-/* .w-75 {
-  width: 90% !important;
-} */
+
 
 .next,.prev{
   color: black !important;
   background-color: transparent !important;
-  /* box-shadow: 0 2px 8px 0 rgba(0,0,0,.15); */
-  /* box-shadow: 0 10 0 20 #ccc; */
   font-size: 2rem !important;
   border-radius: 50% !important;
   border: none !important;
@@ -76,7 +68,6 @@
   font-size: 14px;
   color: #002f34;
   font-weight: 700;
-  /* border-bottom:2px solid #002f34 ; */
   text-decoration: underline;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;

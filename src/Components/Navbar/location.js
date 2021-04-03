@@ -26,7 +26,7 @@ export default function Asynchronous() {
 
     (async () => {
       const response = await fetch('https://country.register.gov.uk/records.json?page-size=5000');
-      await sleep(1e3); // For demo purposes.
+      await sleep(1e3); 
       const countries = await response.json();
 
       if (active) {
@@ -49,9 +49,7 @@ export default function Asynchronous() {
   const useStyles = makeStyles(theme => ({
       TextField : {
           border: "3px solid #002f34"
-        // autoFocus :  "False"
-        // color : 'primary'
-        
+      
     }
 }));
 
@@ -77,14 +75,10 @@ return (
     renderInput={(params) => (
         <TextField
         className = {classes.TextField}
-        // color = "green"
         {...params}
-        //   label="Select Country "
         placeholder="Select Country"
         data-shrink = "False"
-        // style={{ borderColor: 'white'}} variant="outlined"
-        //   onChange = {this.props.handleChangeValue("input")}
-          // variant="input"
+        
           InputProps={{
             ...params.InputProps,
             endAdornment: (

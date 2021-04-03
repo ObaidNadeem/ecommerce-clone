@@ -78,7 +78,6 @@ button:hover{
 
 .carousel-indicators{
   margin: -10px auto;
-/* background: #a8a8a836; */
   height: 4vh;
 }
 
@@ -123,10 +122,8 @@ button:hover{
 
 .btn-primary{
   background: none !important;
-/* color: #002f34; */
 border: none !important;
 text-decoration: underline;
-/* border-bottom: 2px solid !important; */
 }
 
 .login-button {

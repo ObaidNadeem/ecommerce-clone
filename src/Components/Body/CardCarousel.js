@@ -1,7 +1,6 @@
 import React from 'react'
 import { CommonCard } from './CommonCard'
-// import banner2 from './Images/banner2.jpg'
-// import JumboImage from './Images/JumboImage.jpg'
+
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import './card.css';

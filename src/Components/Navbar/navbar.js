@@ -4,14 +4,32 @@ import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Dropdown, Carousel
 import './navbar.css'
 import sellButton from './Images/OlxSellButton.png'
 import Asynchronous from './location'
-// import CategDrop from './secondNav'
 import Popup from 'reactjs-popup';
 import LoginModal from './LoginModal';
-import Login from './LoginModal'
+import Login from './LoginModal';
+import { FbAuth } from './fbauth'
+import firebase from '../../Config/Firebase'
 
+import { BrowserRouter , Link } from 'react-router-dom'; 
+
+
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    console.log(user.displayName)
+    user = true
+  } else {
+    user = false  
+
+  }
+
+
+});
 
 class Olxnav extends Component {
     render(){
+      
+    
         return(
             <div>
                 <Navbar id="parentDiv" bg="light" expand="lg">
@@ -19,48 +37,31 @@ class Olxnav extends Component {
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      {/* <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown> */}
+     
       
     
     <Asynchronous disablePortal="true"  id="country_input" />
     
     <Form inline>
       <FormControl id="searchbar_input" type="text" placeholder="Find Cars, Mobile Phones and more..." className="mr-sm-2" />
-      {/* <Button variant="outline-success">Search</Button> */}
       <span className="searchBarIcon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg></span>
     </Form>
 
 
     </Nav>
-    {/* <span><svg id="navbar_chat" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 3c5.514 0 10 3.592 10 8.007 0 4.917-5.144 7.961-9.91 7.961-1.937 0-3.384-.397-4.394-.644-1 .613-1.594 1.037-4.272 1.82.535-1.373.722-2.748.601-4.265-.837-1-2.025-2.4-2.025-4.872 0-4.415 4.486-8.007 10-8.007zm0-2c-6.338 0-12 4.226-12 10.007 0 2.05.739 4.063 2.047 5.625.055 1.83-1.023 4.456-1.993 6.368 2.602-.47 6.301-1.508 7.978-2.536 1.417.345 2.774.503 4.059.503 7.084 0 11.91-4.837 11.91-9.961-.001-5.811-5.702-10.006-12.001-10.006z"/></svg></span> */}
-    {/* <span><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M1 20v-2.946c1.993-.656 2.575-2.158 3.668-6.077.897-3.218 1.891-6.784 4.873-8.023-.027-.147-.041-.299-.041-.454 0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .156-.014.309-.042.458 2.987 1.244 3.984 4.813 4.884 8.033 1.103 3.95 1.697 5.423 3.658 6.062v2.947h-7c0 2.208-1.792 4-4 4s-4-1.792-4-4h-7zm14 0h-6c0 1.656 1.344 3 3 3s3-1.344 3-3zm-13-1h20v-1.241c-2.062-.918-2.82-3.633-3.621-6.498-1.066-3.814-2.167-7.758-6.379-7.761-4.21 0-5.308 3.937-6.369 7.745-.8 2.872-1.559 5.593-3.631 6.514v1.241zm11.492-16.345l.008-.155c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5l.008.152c.455-.099.949-.152 1.487-.152.542 0 1.039.054 1.497.155z"/></svg></span> */}
     
-    {/* <Popup trigger={<span id="loginBtn">Login</span>} modal nested >
-    <div>
-
-      <LoginModal />
-
-    </div>
-  </Popup> */}
-
-  <Login id="loginBtn" />
-    
-    
+  
+  <Login />
+  
+  <Link to='/sellpage'>
     <img className="sellButton" src={sellButton} alt="SellButton" />
+  </Link>
+  
   </Navbar.Collapse>
 </Navbar> 
 
 
-{/* Second nav */}
-{/* < CategDrop /> */}
+
 
 
 
@@ -234,5 +235,4 @@ class SecondHeader extends React.Component {
   }
 }
 
-// export default Olxnav;
 export { Olxnav ,  SecondNav , FirstHeader, SecondHeader}
